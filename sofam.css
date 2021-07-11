@@ -259,33 +259,18 @@ body {
   position: relative;
   background-color: #333;
   padding: 10rem 20rem 5rem 20rem;
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(30rem, 1fr));
-  grid-template-rows: 2fr, 1fr;
-  grid-template-areas:
-    "info map form"
-    "socialMedia socialMedia socialMedia";
-  grid-column-gap: 1.5rem;
-  grid-row-gap: 5rem;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: stretch;
 }
-@media only screen and (max-width: 70em) {
-  .footer {
-    grid-template-columns: 1fr;
-    grid-template-rows: repeat(3, minmax(20rem, 1fr)), 1fr;
-    grid-template-areas:
-      "map"
-      "form"
-      "info"
-      "socialMedia";
-    padding: 10rem 10rem 5rem 10rem;
-  }
-}
+
 .footer__info {
   grid-area: info;
   display: flex;
-  justify-content: start;
+  justify-content: center;
   flex-direction: column;
-  align-items: stretch;
+  align-items: center;
 }
 @media only screen and (max-width: 70em) {
   .footer__info {
@@ -293,7 +278,7 @@ body {
   }
 }
 .footer__info-logo {
-  width: 20rem;
+  width: 50rem;
   height: auto;
 }
 @media only screen and (max-width: 70em) {
@@ -313,7 +298,7 @@ body {
   }
 }
 .footer__info-text {
-  font-size: 1.6rem;
+  font-size: 2rem;
 }
 @media only screen and (max-width: 70em) {
   .footer__info-text {
@@ -541,20 +526,6 @@ body {
   margin-top: 12.5rem;
 }
 
-.iheader {
-  height: 30vh;
-  background-image: linear-gradient(
-      to bottom,
-      rgba(255, 97, 34, 0.75),
-      rgba(255, 133, 19, 0.85)
-    ),
-    url(car.jpg);
-  background-size: 100% 100%;
-  background-repeat: no-repeat;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
 .iheader__text {
   transform: translate(0, 0);
   font-size: 2.5rem;
@@ -840,7 +811,7 @@ body {
   filter: grayscale(100%);
   margin-right: 10rem;
   margin-bottom: 5rem;
-  height: 4rem;
+  height: 9rem;
   width: auto;
   transition: all 0.25s;
 }
