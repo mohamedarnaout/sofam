@@ -713,6 +713,10 @@ body {
   margin-right: 1rem;
   color: #eee;
 }
+.notification__text--3-icon {
+  margin-right: 1rem;
+  color: #eee;
+}
 @media only screen and (max-width: 87em) {
   .notification__text--3-icon {
     margin-right: 1.25rem;
